@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+button {
+    cursor: pointer;
+}
+
+.navBarContainer {
+    background-color: #119b9d;
+    display: flex;
+    justify-content: center;
+}
+
+.navBar {
+    width: 1200px;
+    height: 170px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.topHeader {
+    display: flex;
+    align-items: center;
+}
+
+.topHeader h1 {
+    color: white;
+    font-size: 50px;
+}
+
+.topTitle {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.topHeader ul {
+    display: flex;
+    flex: 0.5;
+    text-decoration: none;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.7rem;
+}
+
+.topHeader li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.topHeader a {
+    text-decoration: none;
+    color: black;
+}
+
+.donatebtn {
+    margin-left: 40px;
+}
+
+.btn {
+    text-decoration: none;
+    color: #9900ff;
+    font-size: 1.7rem;
+    border: 3px solid #9900ff;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: white;
+}
+
+.bottomHeader {
+    display: flex;
+    justify-content: space-evenly;
+    height: 80px;
+
+}
+
+form{
+    width: 200px;
+}
+
+.petTypes {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.petTypes label{
+    color: white;
+    flex: 3;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.petSelection img {
+    height: 32px;
+}
+
+.petSelection {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    align-items: stret;
+}
+
+.petSelection select {
+    width: 250px;
+    padding-left: 5px;
+}
+
+.petLocation {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.petLocation label {
+    color: white;
+    flex: 3;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.petZipcode {
+    display: flex;
+    flex: 2;
+}
+
+.petZipcode img {
+    height: 32px;
+}
+
+.petZipcode input {
+    padding-left: 10px;
+    width: 250px;
+}
+
+.searchBox {
+    display: flex;
+    flex-direction: column;
+    flex: 1.5;
+}
+
+.searchBoxTop{
+    flex: 3;
+}
+
+.searchBoxBottom {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.searchBtn {
+    width: 300px;
+    font-size: 20px;
+    background-color: #6d0ead;
+    color: white;
+    border: 3px solid black;
+    box-shadow: 3px 3px black;
+}
+
+.rowContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rowContainer img {
+    height: 150px;
+}
+
+.petListBox {
+    width: 1150px;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.petPicture {
+    flex: 0.5;
+}
+
+.petInfo {
+    flex: 3;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.petInfo h1 {
+    font-size: 35px;
+}
+
+.petInfo p {
+    font-size: 20px;
+}
+
+.totalPettingsContainer {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.totalPettings p {
+    font-size: 20px;
+}
+
+.totalPettingsContainer button {
+    background-color: #17cfd1;
+    color: white;
+    width: 200px;
+    height: 30px;
+    border: 3px solid black;
+    box-shadow: 3px 3px black;
+    font-size: 20px;
+}

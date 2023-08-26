@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cityTemperatureBox, .navBar {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.navBar {
+    display: flex;
+    height: 120px;
+    margin-bottom: 20px;
+    background-color: #9fc5f8;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.navBar h1 {
+    margin-left: 10px;
+}
+
+.navBar ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-right: 10px;
+}
+.navBar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.cityBox {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #999
+}
+
+.cityBox select {
+    width: 60px;
+}
+
+.row {
+    display: flex;
+    
+}
+
+.dailyWeatherBox {
+    flex: 1;
+    text-align: center;
+    background-color: #ddd;
+    padding: 40px 0;
+    margin-right: 20px;
+}
+
+.dailyWeatherBox:last-child {
+    margin-right: 0;
+}
+.dailyWeatherBox img {
+    border-radius: 50%;
+    width: 156px;
+    margin: 40px 0;
+}
+
+.temperatures {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.high, .low {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.high::after, .low::after {
+    content: "°";
+}
+
+.high {
+    color: #cf2a27;
+}
+
+.low {
+    color: #2b78e4;
+}
+
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+}
+
+.cookie-policy {
+    display: flex;
+    width: 960px;
+    height: 160px;
+    padding: 20px;
+    border: 2px solid #999;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    position: fixed;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 2px solid #000;
+    box-shadow: 4px 4px #000;
+    background-color: #9fc5f8;
+    cursor: pointer;
+}
+
+.text{
+    width: 70%;
+}
+
+.text h2{
+    font-size: 1.8rem;
+}
+
+.text p {
+    font-size: 1.2rem
+}
+
+

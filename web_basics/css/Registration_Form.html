@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <div>
+        <label>First Name:*</label>
+        <input type="text" name="fist_name" >
+    </div>
+    <div>
+        <label>Last Name:*</label>
+        <input type="text" name="last_name">
+    </div>
+    <div>
+        <label>Email Address:*</label>
+        <input type="text" name="email_address">
+    </div>
+    <div>
+        <label>Password:*</label>
+        <input type="password" name="password">
+    </div>
+    <div>
+        <label>Confirm Password:*</label>
+        <input type="password" name="password">
+    </div>
+    <div>
+        <label>Birthday:</label>
+        <input type="date" name="dob">
+    </div>
+    <p>Gender Identity:</p>
+    <div>
+        <label><input type="radio" name="gender">Male</label>
+        <label><input type="radio" name="gender">Female</label>
+        <label><input type="radio" name="gender">Non-binary</label>
+        <label><input type="radio" name="gender">I prefer not to answer</label>
+    </div>
+    
+    <p>A short description about myself:</p>
+    <textarea name="comment" cols="30" rows="3"></textarea>
+    
+    <div>
+        <label>Favorite Language:</label>
+        <select name="programming language">
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+        </select>
+    </div>
+    <div>
+        <label><input type="checkbox" name="accept" checked>Yes, I would like to receive periodic email updates</label>
+    </div>
+    <input type="submit" value="Create Account">
+    <p>*Indicates a erquired field</p>
+</body>
+</html>

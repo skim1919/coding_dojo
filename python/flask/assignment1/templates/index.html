@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container {
+            display: flex;
+        }
+
+
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            display: inline-block;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome!</h1>
+
+    {% for i in range(number): %}
+    <div class="box" style="background-color: {{color}}"></div>
+    {% endfor %}
+</body>
+
+</html>

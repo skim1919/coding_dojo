@@ -1,0 +1,93 @@
+.btn {
+    height: 30px;
+    width: 80px;
+    border: none;
+    font-size: 16px;
+    background-color: #17a2b8;
+    color: white;
+    box-shadow: 5px 5px black;
+
+}
+
+.row {
+    display: flex;
+    
+}
+
+.col {
+    flex: 1;
+    padding: 5px;
+    margin: 10px;
+    height: 50px;
+    width: 70px;
+    background-color: #5f9fa0;
+    color: white;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav {
+    background-color: #333333;
+    color: white;
+    height: 80px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    width: 50%;
+    align-items: center;
+    list-style: none;
+    justify-content: space-around;
+    display: flex;
+}
+
+/* flex-navar */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav {
+    background-color: #333333;
+    color: white;
+    height: 80px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    width: 50%;
+    align-items: center;
+    list-style: none;
+    justify-content: space-around;
+    display: flex;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-title {
+    margin-left: 20px;
+}
+
+.btn {
+    height: 30px;
+    width: 80px;
+    border: none;
+    font-size: 16px;
+    background-color: #17a2b8;
+    color: white;
+    box-shadow: 5px 5px black;
+
+}

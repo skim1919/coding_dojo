@@ -1,0 +1,182 @@
+Coding Dojo
+Software Development Online Part-Time Accelerated 3 stacks Courses
+
+HOME
+LEARN
+CONTACT
+ Sarang Kim
+Courses
+Unit
+Assignment Checklist
+Stats
+Take Exams
+
+WEB FUNDAMENTALS (2021) PART-TIME ONLINE
+
+Course Icon
+JS
+JavaScript in the Browser
+Document Object Model
+QuerySelector
+Changing HTML and CSS
+Likes
+Stress Reflection
+Making Connections
+Timeout
+Input and Change
+DojoWeather
+Chapter Survey
+The Yellow Belt
+Terminal Basics
+JavaScript Fundamentals
+Advanced Topics
+
+Practice
+Deadline: Friday of Week 2
+Difficulty Level: Advanced
+Est. Time: 4+ hours
+DojoWeather
+Using HTML, CSS, and JS recreate the look and functionality of the following website. The Yellow Belt will have a similar set of feature requirements. The cropped images can be downloaded here.
+
+
+
+
+
+
+When you've turned in your solution, navigate over to your "assignment checklist" tab to check out the green check mark - you're one assignment closer to graduation!
+
+
+
+Help, I'm Stuck!
+I've struggled for <20 minutes.
+I've struggled for <40 minutes.
+I've struggled for >40 minutes.
+Re-read the previous modules for extra clarity.
+Search for specific help on Google, such as "making <p> tags in italics."
+Post in your cohort's Discord channel so your classmates can help!
+Tag a TA or instructor on Discord.
+Schedule a code review.
+After you turn in your best attempt, read through the assignment solution and see how you did!
+
+Recreate the look of the Weather Forecast page using HTML and CSS
+
+Use position: fixed; to position the cookie policy message at the bottom of the page
+
+When a user clicks on a city, alert the message "Loading weather report..."
+
+When the user accepts the cookie policy, hide the fixed message
+
+Challenge: When the user changes the <select> convert the temperatures from Celsius to Fahrenheit
+
+Submit
+Note:
+Please
+Zip
+your file(s) before uploading.
+
+upload-icon
+Drag & drop your files
+
+or Browse
+Type in a URL here
+Save
+Check Solutions
+Previous
+Privacy Policy
+
+DojoWeather
+Close Icon
+DojoWeather Solution
+README.md
+dojoweather
+assets
+index.html
+script.js
+style.css
+Video Walkthrough
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top">
+        <div class="nav">
+            <h1>DojoWeather</h1>
+            <ul class="links">
+                <li onclick="loading()"><a href="#">Burbank</a></li>
+                <li onclick="loading()"><a href="#">Chicago</a></li>
+                <li onclick="loading()"><a href="#">Dallas</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="subtitle-line">
+            <h2>San Jose</h2>
+            <form>
+                <label>Show temperature in </label>
+                <select name="temperature-scale" onchange="convert(this)">
+                    <option>°C</option>
+                    <option>°F</option>
+                </select>
+            </form>
+        </div>
+        <div class="row">
+            <div class="forecast">
+                <h1>Today</h1>
+                <img src="assets/some_rain.png" alt="rain">
+                <p>some rain</p>
+                <p class="temperatures">
+                    <span class="high" id="temp1">24</span>
+                    <span class="low" id="temp2">18</span>
+                </p>
+            </div>
+            <div class="forecast">
+                <h1>Tomorrow</h1>
+                <img src="assets/some_sun.png" alt="sun">
+                <p>some sun</p>
+                <p class="temperatures">
+                    <span class="high" id="temp3">27</span>
+                    <span class="low" id="temp4">19</span>
+                </p>
+            </div>
+            <div class="forecast">
+                <h1>Friday</h1>
+                <img src="assets/some_clouds.png" alt="clouds">
+                <p>some cloud</p>
+                <p class="temperatures">
+                    <span class="high" id="temp5">21</span>
+                    <span class="low" id="temp6">16</span>
+                </p>
+            </div>
+            <div class="forecast">
+                <h1>Saturday</h1>
+                <img src="assets/some_sun.png" alt="sun">
+                <p>some sun</p>
+                <p class="temperatures">
+                    <span class="high" id="temp7">26</span>
+                    <span class="low" id="temp8">21</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="cookie-policy">
+            <img src="assets/cookie.png" alt="cookie">
+            <div class="text">
+                <h2>Stop! Cookie time.</h2>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyze our site traffic. <a href="#">Read more...</a></p>
+            </div>
+            <button class="btn" onclick="accept()">Accept</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
